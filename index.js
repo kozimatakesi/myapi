@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT;
 
 app.use(cors({
-  origin: 'https://reac-test01.herokuapp.com/', //アクセス許可するオリジン
+  origin: 'https://reac-test01.herokuapp.com', //アクセス許可するオリジン
   credentials: true, //レスポンスヘッダーにAccess-Control-Allow-Credentials追加
   optionsSuccessStatus: 200 //レスポンスstatusを200に設定
 }))
