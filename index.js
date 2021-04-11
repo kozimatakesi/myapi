@@ -2,10 +2,10 @@ const express = require('express');
 const puppetter = require('puppeteer');
 const cors = require('cors');
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT;
 
 app.use(cors({
-  origin: ['http://localhost:3000','https://reac-test01.herokuapp.com/'], //アクセス許可するオリジン
+  origin: 'https://reac-test01.herokuapp.com/', //アクセス許可するオリジン
   credentials: true, //レスポンスヘッダーにAccess-Control-Allow-Credentials追加
   optionsSuccessStatus: 200 //レスポンスstatusを200に設定
 }))
