@@ -10,6 +10,10 @@ app.use(cors({
   optionsSuccessStatus: 200 //レスポンスstatusを200に設定
 }))
 
+app.get('/', (req, res) => {
+  res.send('Hello World');
+})
+
 app.get('/api/v1/list', async (req, res) => {
   console.log(req.query.name);
   const browser = await puppetter.launch({
