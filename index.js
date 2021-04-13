@@ -30,4 +30,4 @@ app.get('/api/v1/list', async (req, res) => {
   res.json(nameArray);
 });
 
-app.listen(PORT, () => console.log('Listening on port 3001'));
+app.listen(PORT, () => console.log(`Listening on port ${PORT}`);
